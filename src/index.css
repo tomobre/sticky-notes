@@ -1,0 +1,17 @@
+html {
+  background: rgb(194, 251, 255);
+}
+
+.note {
+  width: 250px;
+  height: 150px;
+  background-color: yellow;
+  padding: 15px;
+  border: 1px black;
+  box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.2);
+  position: absolute;
+}
+
+.note textarea {
+  resize: none;
+}
