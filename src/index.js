@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
+import Draggable from "react-draggable";
 
 class Note extends React.Component {
   constructor(props) {
@@ -32,21 +33,25 @@ class Note extends React.Component {
 
   renderForm = () => {
     return (
-      <div className="note" style={this.style}>
-        <textarea ref="newText"></textarea>
-        <button onClick={this.save}>Save</button>
-      </div>
+      <Draggable>
+        <div className="note" style={this.style}>
+          <textarea ref="newText"></textarea>
+          <button onClick={this.save}>Save</button>
+        </div>
+      </Draggable>
     );
   };
   renderDisplay = () => {
     return (
-      <div className="note" style={this.style}>
-        <p>{this.props.children}</p>
-        <span>
-          <button onClick={this.edit}>Edit</button>
-          <button onClick={this.delete}>X</button>
-        </span>
-      </div>
+      <Draggable>
+        <div className="note" style={this.style}>
+          <p>{this.props.children}</p>
+          <span>
+            <button onClick={this.edit}>Edit</button>
+            <button onClick={this.delete}>X</button>
+          </span>
+        </div>
+      </Draggable>
     );
   };
 

@@ -1,4 +1,5 @@
-{"homepage":"http://tomobre.github.io/sticky-notes",
+{
+  "homepage": "http://tomobre.github.io/sticky-notes",
   "name": "sticky",
   "version": "0.1.0",
   "private": true,
@@ -8,12 +9,13 @@
     "@testing-library/user-event": "^12.1.10",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-draggable": "^4.4.3",
     "react-scripts": "4.0.1",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-		"predeploy": "npm run build",
-		"deploy": "gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -39,6 +41,5 @@
   },
   "devDependencies": {
     "gh-pages": "^3.1.0"
-	}
-	
+  }
 }
